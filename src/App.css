@@ -1,16 +1,44 @@
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
     text-align: center;
+    background: url(./imagens/bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+  }
+
+  #um  {
+    font-size: 40px;
+    margin: 0  auto;
+    background-color: rgb(0, 0, 0);
+    color: red;
+    width: 20%;
+    height: auto;
+  }
+  #dois {
+    font-size: 30px;
+    margin: 0  auto;
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 0, 0);
+    width: 20%;
+    height: auto;
   }
   
   .question-card {
-    margin: 0 auto;
-    background-color: gray;
-    padding: 16px;
+    margin: 10vh auto;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
     border-radius: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.295);
-    width: 80%;
+    width: 60%;
     height: auto;
   }
   
@@ -18,7 +46,7 @@
     list-style: none;
   }
   li {
-    background-color: darkgray;
+    background-color: rgb(255, 78, 78);
     padding: 16px;
     border: 3px solid white;
     border-radius: 20px;
@@ -27,13 +55,13 @@
   }
   
   .question-text {
-    color: darkblue;
+    color: rgb(255, 0, 0);
     font-size: 24px;
   }
   
   .final-results {
     margin: 0 auto;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     padding: 16px;
     border-radius: 16px;
     color: white;
@@ -52,6 +80,24 @@
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-  
     border-radius: 24px;
+  }
+
+  @media screen and (max-width: 834px) {
+    #um  {
+      font-size: 40px;
+      margin: 0  auto;
+      background-color: rgb(0, 0, 0);
+      color: red;
+      width: 60%;
+      height: auto;
+    }
+    #dois {
+      font-size: 30px;
+      margin: 0  auto;
+      background-color: rgb(0, 0, 0);
+      color: rgb(253, 0, 0);
+      width: 60%;
+      height: auto;
+    }
   }
